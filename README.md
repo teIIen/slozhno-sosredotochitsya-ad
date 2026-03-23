@@ -11,3 +11,5 @@
 ## Запуск
 
 Откройте файл `index.html` в браузере.
+
+https://github.com/teIIen/slozhno-sosredotochitsya-ad
