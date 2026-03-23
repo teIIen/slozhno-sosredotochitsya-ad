@@ -1,16 +1,37 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --page-bg-color: #fff1f7;
+  --page-bg-image: url("../images/cover-image-light.png");
+  --accent-color: #ff8dcb;
+  --accent-soft-color: rgba(50, 49, 45, 0.4);
+  --title-color: #ffc2e6;
+  --text-color: #353430;
+  --heading-color: #353430;
+  --decorated-text-color: #353430;
+  --button-color: #353430;
+  --button-hover-color: rgba(50, 49, 45, 0.4);
+  --section-title-color: #353430;
+  --content-bg-color: #ff8dcb;
+  --content-text-color: #353430;
+  --corner-color: #353430;
+  --rec-display: none;
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+@media (prefers-color-scheme: light) {
+  :root:not(.theme-dark):not(.theme-light) {
+    --page-bg-color: #fff1f7;
+    --page-bg-image: url("../images/cover-image-light.png");
+    --accent-color: #ff8dcb;
+    --accent-soft-color: rgba(50, 49, 45, 0.4);
+    --title-color: #ffc2e6;
+    --text-color: #353430;
+    --heading-color: #353430;
+    --decorated-text-color: #353430;
+    --button-color: #353430;
+    --button-hover-color: rgba(50, 49, 45, 0.4);
+    --section-title-color: #353430;
+    --content-bg-color: #ff8dcb;
+    --content-text-color: #353430;
+    --corner-color: #353430;
+    --rec-display: none;
+  }
 }

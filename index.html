@@ -1,40 +1,215 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="theme-auto" lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
     <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
+    <link rel="icon" href="./images/favicon.ico" sizes="any">
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/dark.css">
+    <link rel="stylesheet" href="./styles/light.css">
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <nav class="header__theme-menu">
+      <span class="header__rec" aria-hidden="true">REC</span>
+      <nav class="header__theme-menu" aria-label="Переключение темы">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
             <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
+              class="header__theme-menu-button header__theme-menu-button_type_dark"
+              type="button"
+              data-theme="dark"
             >
-              День
+              неон
             </button>
           </li>
           <li class="header__theme-menu-item">
             <button
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+              type="button"
+              data-theme="auto"
               disabled
             >
-              Авто
+              авто
             </button>
           </li>
           <li class="header__theme-menu-item">
             <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
+              class="header__theme-menu-button header__theme-menu-button_type_light"
+              type="button"
+              data-theme="light"
             >
-              Неон
+              день
             </button>
           </li>
         </ul>
       </nav>
+      <h1 class="page-title">no focus</h1>
+      <p class="header__text title-decor">
+        Что делать, когда не можешь делать ничего. Или почему нам так сложно
+        сконцентрироваться, особенно когда очень надо.
+      </p>
     </header>
+
+    <main class="content">
+      <section class="content-section content-section--two-columns">
+        <h2 class="section-title">Почему сосредоточиться так сложно</h2>
+        <div class="content-section__articles">
+          <article class="card">
+            <h3 class="card__title title-decor">Многозадачность</h3>
+            <p class="card__text">
+              Особенно сложно концентрироваться, когда задач много и все кажутся
+              одинаково важными. Мы перескакиваем между вкладками, уведомлениями и
+              сообщениями, а в итоге не успеваем погрузиться ни в одну из задач по-настоящему.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Дофамин</h3>
+            <p class="card__text">
+              Любое быстрое поощрение кажется мозгу более привлекательным, чем
+              большая и сложная задача. Поэтому короткое видео, новое сообщение или
+              очередное обновление ленты почти всегда выигрывают у работы, которая требует усилия.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2 class="section-title section-title--wide">Что снижает концентрацию</h2>
+        <div class="cards-grid cards-grid--three">
+          <article class="card">
+            <h3 class="card__title title-decor">Многозадачность</h3>
+            <p class="card__text">
+              Попытка делать всё сразу кажется эффективной только на первый взгляд.
+              На деле каждое переключение между задачами отнимает силы и время, а
+              сосредоточение постоянно приходится собирать заново.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Еда</h3>
+            <p class="card__text">
+              Лёгкий голод, тяжёлая пища или бесконечные походы за перекусом тоже
+              отвлекают. Организм занят более понятными сигналами, а значит, удержать
+              внимание на абстрактной задаче становится труднее.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Гаджеты</h3>
+            <p class="card__text">
+              Телефон, умные часы, ноутбук с десятком вкладок и постоянные сигналы
+              внешнего мира не дают вниманию зафиксироваться. Даже если вы не
+              реагируете сразу, мозг уже держит эти раздражители в поле зрения.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section content-section--two-columns">
+        <h2 class="section-title">Как себе помочь</h2>
+        <div class="content-section__articles">
+          <article class="card">
+            <h3 class="card__title title-decor">5 простых (на самом деле не очень) советов</h3>
+            <h4 class="card__subtitle title-decor">Представьте небо и облака</h4>
+            <p class="card__text">
+              Если мысли разбегаются, попробуйте не бороться с ними напрямую. Иногда
+              полезнее представить, что они просто проплывают мимо, как облака: вы
+              замечаете их, но не обязаны за каждую цепляться.
+            </p>
+          </article>
+          <article class="card">
+            <h4 class="card__subtitle title-decor">Включите музыку</h4>
+            <p class="card__text">
+              Для кого-то работает ровный фон без слов, для кого-то повторяющийся
+              трек. Если внешние звуки мешают, попробуйте заменить их предсказуемым
+              шумом, который не требует реакции.
+            </p>
+          </article>
+          <article class="card">
+            <h4 class="card__subtitle title-decor">Прогуляйтесь</h4>
+            <p class="card__text">
+              Иногда концентрация не приходит не потому, что вы ленитесь, а потому что
+              мозг устал. Короткая прогулка или даже несколько минут движения помогают
+              переключить состояние лучше, чем ещё одна попытка сидеть через силу.
+            </p>
+          </article>
+          <article class="card">
+            <h4 class="card__subtitle title-decor">Хорошо ешьте</h4>
+            <p class="card__text">
+              Это звучит слишком просто, но еда и вода влияют на внимание сильнее,
+              чем кажется. Когда телу не хватает ресурсов, любая интеллектуальная
+              задача ощущается заметно тяжелее.
+            </p>
+          </article>
+          <article class="card">
+            <h4 class="card__subtitle title-decor">Читайте</h4>
+            <p class="card__text">
+              Длинный текст тренирует способность удерживать внимание дольше, чем
+              короткий быстрый контент. Полезно читать не только ради информации, но и
+              как упражнение для фокуса. Начать можно с материалов
+              <a
+                class="card__link"
+                href="https://ru.wikipedia.org/wiki/%D0%92%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5"
+                target="_blank"
+                rel="noreferrer noopener"
+              >о внимании</a>
+              и
+              <a
+                class="card__link"
+                href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%BE%D0%B3%D0%BE%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%BD%D0%BE%D1%81%D1%82%D1%8C"
+                target="_blank"
+                rel="noreferrer noopener"
+              >многозадачности</a>.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2 class="gallery__title title-decor">А можно просто смотреть в окно</h2>
+        <div class="gallery__grid">
+          <img
+            class="gallery__image gallery__image--sunset"
+            src="./images/sunset.png"
+            alt="Градиентный закат над водой"
+            loading="lazy"
+          >
+          <img
+            class="gallery__image gallery__image--ice-cream"
+            src="./images/ice-cream.png"
+            alt="Розовое мороженое на фоне неба"
+            loading="lazy"
+          >
+          <img
+            class="gallery__image gallery__image--tape"
+            src="./images/tape.png"
+            alt="Кассетная лента в неоновом свете"
+            loading="lazy"
+          >
+          <img
+            class="gallery__image gallery__image--books"
+            src="./images/books.png"
+            alt="Стопка книг и тёплый свет лампы"
+            loading="lazy"
+          >
+          <img
+            class="gallery__image gallery__image--street"
+            src="./images/street.png"
+            alt="Ночная улица с яркими вывесками"
+            loading="lazy"
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer decorated-zone">
+      <h2 class="page-title page-title--footer">focus</h2>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
